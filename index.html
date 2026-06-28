@@ -235,7 +235,6 @@
                 <p>Análise de geomarketing avançada para determinar as coordenadas geográficas de maior potencial para pontos comerciais físicos.</p>
             </div>
             
-            <!-- Card Atualizado conforme solicitado -->
             <div class="card">
                 <div class="icon">🌾</div>
                 <h3>Análise Agrícola para Aquisição de Terrenos</h3>
@@ -243,20 +242,25 @@
             </div>
         </div>
 
-        <!-- Área de Contato Direto por E-mail -->
         <section id="contato" class="contact-section">
             <h3>Fale com um Especialista</h3>
-            <p>Envie sua mensagem diretamente para nossa equipe em contato@scinsight.com.br</p>
+            <p>Envie sua mensagem diretamente para nossa equipe</p>
             
-            <form action="mailto:contato@scinsight.com.br" method="post" enctype="text/plain">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="8ae2b11c-153f-4f0a-bf1a-79c786d18d6c">
+                
+                <input type="hidden" name="subject" value="Novo Contato via scinsight.com.br">
+                
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                 <div class="form-group">
                     <label for="nome">Seu Nome / Empresa:</label>
-                    <input type="text" id="nome" name="Nome" placeholder="Ex: João Silva - TechCorp" required>
+                    <input type="text" id="nome" name="Nome_Empresa" placeholder="Ex: João Silva - TechCorp" required>
                 </div>
                 
                 <div class="form-group">
                     <label for="servico">Serviço de Interesse:</label>
-                    <input type="text" id="servico" name="Servico de Interesse" placeholder="Ex: Auditoria para RDA ou Inteligência Agrícola">
+                    <input type="text" id="servico" name="Servico_Interesse" placeholder="Ex: Auditoria para RDA ou Inteligência Agrícola">
                 </div>
                 
                 <div class="form-group">
@@ -264,7 +268,7 @@
                     <textarea id="mensagem" name="Mensagem" rows="5" placeholder="Descreva brevemente o seu desafio tecnológico..." required></textarea>
                 </div>
                 
-                <button type="submit" class="btn-submit">Enviar E-mail</button>
+                <button type="submit" class="btn-submit">Enviar Mensagem</button>
             </form>
         </section>
     </main>
